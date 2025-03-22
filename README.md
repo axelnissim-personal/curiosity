@@ -1,5 +1,7 @@
 # 🧠 Curiosity-Driven Knowledge Exploration System
 
+![Curiosity Cat](CuriosityCat.jpg)
+
 ## Overview
 
 This project is a curiosity-driven knowledge exploration system named **Curiosity**, inspired by the concepts outlined in the paper [Curiosity Is All You Need: A Comprehensive Framework for Intrinsically Motivated Language Models](https://github.com/axelnissim-personal/curiosity/blob/main/Curiosity_Is_all_you_need.md). 
