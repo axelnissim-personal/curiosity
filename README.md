@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a curiosity-driven knowledge exploration system named **Curiosity**, inspired by the concepts outlined in the paper "Curiosity Is All You Need: A Comprehensive Framework for Intrinsically Motivated Language Models". 
+This project is a curiosity-driven knowledge exploration system named **Curiosity**, inspired by the concepts outlined in the paper [Curiosity Is All You Need: A Comprehensive Framework for Intrinsically Motivated Language Models](https://github.com/axelnissim-personal/curiosity/blob/main/Curiosity_Is_all_you_need.md). 
 
 The system autonomously explores concepts and relationships, building a dynamic knowledge graph. It uses a combination of probabilistic reasoning, reinforcement learning, and natural language processing to generate hypotheses, refine its understanding, and produce a reflective narrative of its intellectual journey. The output is presented in an HTML report, which includes a visual representation of the knowledge graph, a list of hypotheses, and a creative essay.
 
