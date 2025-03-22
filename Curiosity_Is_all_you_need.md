@@ -62,8 +62,11 @@ The proposed Curiosity-Driven Network (CDN) builds upon the Transformer architec
 ### 3.2. Formalizing Intrinsic Rewards
 To provide rigor to our approach, we formalize the components of the intrinsic reward mechanism:
 - **Uncertainty ($U_t$):** Defined as a metric derived from the variance in predictions or the entropy of the output distribution. For example, in a Bayesian framework, $U_t$ might be represented by the variance of the posterior distributions of the model’s weights.
-- **Novelty ($N(x)$):** Calculated as the distance between the latent representation $\phi(x)$ of a new input $x$ and the average representation $\mu$ of all previously encountered inputs:
+- **Novelty ($N(x)$): Calculated as the distance between the latent representation $\phi(x)$ of a new input $x$ and the average representation $\mu$ of all previously encountered inputs:
 
+$$
+N(x) = |\phi(x) - \mu|
+$$
    $$
    N(x) = \| \phi(x) - \mu \|
    $$
