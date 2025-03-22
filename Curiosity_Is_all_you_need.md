@@ -60,16 +60,17 @@ The proposed Curiosity-Driven Network (CDN) builds upon the Transformer architec
    Leveraging the intrinsic reward, the model dynamically generates internal prompts that direct further exploration. These prompts are fed back into the Transformer backbone, effectively guiding the model to areas where its understanding can be improved.
 
 ### 3.2. Formalizing Intrinsic Rewards
+
 To provide rigor to our approach, we formalize the components of the intrinsic reward mechanism:
-- **Uncertainty ($U_t$):** Defined as a metric derived from the variance in predictions or the entropy of the output distribution. For example, in a Bayesian framework, $U_t$ might be represented by the variance of the posterior distributions of the model’s weights.
-- **Novelty ($N(x)$): Calculated as the distance between the latent representation $\phi(x)$ of a new input $x$ and the average representation $\mu$ of all previously encountered inputs:
+
+-   **Uncertainty ($U_t$):** Defined as a metric derived from the variance in predictions or the entropy of the output distribution. For example, in a Bayesian framework, $U_t$ might be represented by the variance of the posterior distributions of the model’s weights.
+-   Novelty ($N(x)$): Calculated as the distance between the latent representation $\phi(x)$ of a new input $x$ and the average representation $\mu$ of all previously encountered inputs:
+
 
 $$
 N(x) = |\phi(x) - \mu|
 $$
-   $$
-   N(x) = \| \phi(x) - \mu \|
-   $$
+ 
 
    This metric can be refined using cosine similarity or other distance measures tailored to the semantic space of the model.
 - **Intrinsic Reward ($r_{tr_t}$):** The intrinsic reward is then a weighted sum of the reduction in uncertainty and the novelty of the input, encouraging the model to learn from both factors.
